@@ -290,33 +290,6 @@
       				 </aside>
     				</section>
 
-            <!-- Circuit -->
-            <section>
-              <img src="https://user-images.githubusercontent.com/125707/26849558-602a9e2c-4b0d-11e7-8a61-f27a27ab5b05.jpg" alt="">
-            </section>
-
-            <!-- Gizra.com Team page -->
-            <section>
-              <small>https://www.gizra.com/team/</small>
-              <div>
-                <img src="https://user-images.githubusercontent.com/125707/26849354-7d266d0e-4b0c-11e7-90be-3aa040565508.jpg" alt="">
-              </div>
-            </section>
-
-            <!-- Municipality -->
-            <section>
-              <img src="https://user-images.githubusercontent.com/125707/26849558-602a9e2c-4b0d-11e7-8a61-f27a27ab5b05.jpg" alt="">
-            </section>
-
-
-            <!-- Municipality translate -->
-            <section>
-              <img src="https://user-images.githubusercontent.com/125707/26849779-12a6866a-4b0e-11e7-8e60-01bd8713b2e5.jpg" alt="">
-            </section>
-
-
-
-
     			  <section data-background-video="http://zippy.gfycat.com/FickleTangibleAntlion.webm" data-background-video-loop>
     					<aside class="notes" data-markdown>
     						* Router
@@ -333,154 +306,55 @@
                 * Can by hybrid
      				  </aside>
     				</section>
-      <!-- Yesod -->
-      <section>
-          <img src="https://cloud.githubusercontent.com/assets/125707/20651098/0daf5924-b4e7-11e6-846d-5f8f7a7abe37.jpg" alt="" />
 
-          <aside class="notes" data-markdown>
-            * Excited about this I was looking at a server side technology that has all those goodies.
-            * Bigger learning curve.
-            * We're not runnin this in production, but I'm activlely working on changing that.
-          </aside>
-      </section>
-
-      <!-- api/login-token -->
-      <section>
-        <img src="https://cloud.githubusercontent.com/assets/125707/25312337/71cab93e-281f-11e7-81e2-d1dc812e8fa6.jpg" alt="" />
-      </section>
-
-
-      <section>
-        <pre>
-          <code class="yaml" data-trim>
--- config/models
-
-User
-    ident Text
-    password Text Maybe -- Password is optional
-    verkey Text Maybe
-    verified Bool
-    UniqueUser ident
-    deriving Typeable
-
-AccessToken json
-    created UTCTime
-    userId UserId
-    token Text
-    UniqueUserId userId
-    UniqueToken token
-    deriving Eq
-    deriving Show
-
-        </code>
-      </pre>
-
-      <aside class="notes" data-markdown>
-      </aside>
-    </section>
-
-    <section>
-      <pre>
-        <code class="yaml" data-trim>
--- config/routes
-
-/api/login-token LoginTokenR GET
-        </code>
-      </pre>
-
-      <aside class="notes" data-markdown>
-      </aside>
-    </section>
-
-
-    <section>
-      <img src="https://cloud.githubusercontent.com/assets/125707/25312085/a6a42a98-2818-11e7-9479-7e70ab828850.jpg" alt="">
-
-      <aside class="notes" data-markdown>
-      </aside>
-    </section>
-
-    <!-- Profile page -->
-    <section>
-      <img src="https://cloud.githubusercontent.com/assets/125707/25312357/cdb73ce0-281f-11e7-88ce-cee5a90a1876.jpg" alt="">
-    </section>
-
-    <!-- Template -->
-    <section>
-      <img src="https://cloud.githubusercontent.com/assets/125707/25312366/f4e21f1a-281f-11e7-9dff-5beb84011a4d.jpg" alt="">
-    </section>
-
-
+            <!-- Circuit -->
             <section>
-                <pre>
-                    <code class="php" data-trim>
-drupal_add_css('static/css/bootstrap.css');
-                    </code>
-                </pre>
-                <pre>
-                    <code class="elm" data-trim>
-addStylesheet $ StaticR css_bootstrap_css
-                    </code>
-                </pre>
+              <img src="https://user-images.githubusercontent.com/125707/26849558-602a9e2c-4b0d-11e7-8a61-f27a27ab5b05.jpg" alt="">
+            </section>
 
-                <aside class="notes" data-markdown>
-                  * When you get a taste of the type safety, hard to stop.
-                  * What can possibly go wrong?
-                </aside>
+            <!-- Gizra.com Team page -->
+            <section>
+              <small>https://www.gizra.com/team/</small>
+              <div>
+                <img src="https://user-images.githubusercontent.com/125707/26849354-7d266d0e-4b0c-11e7-90be-3aa040565508.jpg" alt="">
+              </div>
+            </section>
+
+            <!-- Municipality -->
+            <section>
+              <img src="https://user-images.githubusercontent.com/125707/26850168-4776d7ae-4b0f-11e7-846d-0c002f501699.jpg" alt="">
+            </section>
+
+            <!-- Municipality translate -->
+            <section>
+              <img src="https://user-images.githubusercontent.com/125707/26849779-12a6866a-4b0e-11e7-8e60-01bd8713b2e5.jpg" alt="">
             </section>
 
 
-      <section>
-          <h2>Port Drupal to Haskell?</h2>
-          <small>Probably no</small>
+            <!-- Drupal Elm Starter -->
+            <section>
+              <img src="https://cloud.githubusercontent.com/assets/125707/21802323/fcb4e440-d72d-11e6-8cb0-c90d9e0d34f8.jpg" alt="" />
 
-          <aside class="notes" data-markdown>
-              * Approchable
-              * Huge community
-              * Eco-system, Pantheon/ Platform/ Amazee IO
-              * Monthly releases
-              * Wednesday security releases
-              * DrupalCon, Drupal Association, Drupal Drama
-              * Drush/ Drupal console
-              * Tons of code we didn't have to write, or test
-              * 15 years of experience!
-              * I remember Dris saying back in CPH that we're tied in the hip to the PHP community.
-              * Are we? Are we because we are constantly choosing, or because we're affraid of questioning.
-              * I'm not advocating to let go of PHP, but about letting go of the fears. Drupal has been in its safe zone
-              for a long time.
-              * I'll tell what I tell my clients. You problem is not code. Lets say we have the perfect system, whatever
-              we want will be done tomorrow. What would it be.
-              * And also, how would I know I succedded or failed. What's the matrix.
-              * That talk is quicker, and adaptive, like coding but it's less expensive in time.
-          </aside>
-      </section>
+              <aside class="notes" data-markdown>
+                  * Strong on testing.
+                  * Webdriver (Aron Novak)
+              </aside>
+            </section>
 
 
-      <!-- Drupal Elm Starter -->
-      <section>
-        <img src="https://cloud.githubusercontent.com/assets/125707/21802323/fcb4e440-d72d-11e6-8cb0-c90d9e0d34f8.jpg" alt="" />
+            <!-- Last slide -->
+            <section data-background="https://cloud.githubusercontent.com/assets/125707/11408842/6abc3708-93c4-11e5-8515-bf92a59cf8ea.jpg">
+              <div style="background-color: black; opacity: 0.85; padding: 20px;">
+                <span style="font-family: Abril Fatface; color: #e27058; font-size: 50px;">
+                  gizra
+                </span>
+              </div>
 
-        <aside class="notes" data-markdown>
-            * Strong on testing.
-            * Webdriver (Aron Novak)
-        </aside>
-      </section>
-
-
-      <!-- Last slide -->
-      <section data-background="https://cloud.githubusercontent.com/assets/125707/11408842/6abc3708-93c4-11e5-8515-bf92a59cf8ea.jpg">
-        <div style="background-color: black; opacity: 0.85; padding: 20px;">
-          <span style="font-family: Abril Fatface; color: #e27058; font-size: 50px;">
-            gizra
-          </span>
-        </div>
-
-        <aside class="notes" data-markdown>
-          * Evaluation
-          * If I got you excited, and what I said made sense, and you happen to
-          be amazing developers - we're hiring.
-        </aside>
-      </section>
+              <aside class="notes" data-markdown>
+                * If I got you excited, and what I said made sense, and you happen to
+                be amazing developers - we're hiring.
+              </aside>
+            </section>
 
 
     </div>
