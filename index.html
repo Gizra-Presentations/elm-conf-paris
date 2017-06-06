@@ -250,10 +250,6 @@
               </aside>
             </section>
 
-            <!-- Timewatch -->
-            <section data-background-video="http://zippy.gfycat.com/ClassicSplendidDikkops.webm" data-background-video-loop>
-            </section>
-
             <section>
               <h2>Cost of bugs</h2>
               <aside class="notes" data-markdown>
@@ -277,89 +273,66 @@
               </aside>
             </section>
 
-            <section>
-                <h2>Elm</h2>
-                <small>Generate JavaScript with great performance and no runtime exceptions</small>
 
-                <aside class="notes" data-markdown>
-                    * Frustrated with Angular, I was poking around React, and soon found myself with Elm
-                    * Functional programming language. It compiles to JS. But it's not Typescirpt
-                    * It doesn't try to fix JS. But rather say, JS is wonderful, but as humans we shouldn't interact with it.
-                    * Staticlly typed. It has an amazing compiler which makes sure there are no runtime exceptions. It's immutable.
-                    * In general after years of Angualr 1, and playing a bit with React, Front end has became fun again.
-                    * Development is much faster and more stable than ever, Admitedlly, ever since I divied into Elm and FP I started using it I've started seeing the flaws in Drupal.
-                </aside>
+            <!-- Timewatch -->
+            <section data-background-video="http://zippy.gfycat.com/ClassicSplendidDikkops.webm" data-background-video-loop>
             </section>
 
-      <!-- Counter Example -->
-      <section>
-        <img src="https://cloud.githubusercontent.com/assets/125707/9739824/2fcc8cd0-565a-11e5-8024-0d01200773cd.jpg" />
-      </section>
 
-      <section>
-        <pre style="width: 100%;"><code data-trim class>
-module Counter exposing (..)
+            <!-- Hedley -->
+    				<section>
+    					<small>https://github.com/Gizra/elm-hedley</small>
+      				 <div>
+      					 <img src="https://cloud.githubusercontent.com/assets/125707/11417413/ae2f2d96-941f-11e5-8482-d68a936ad083.jpg" />
+      				 </div>
 
-import Html exposing (..)
-import Html.Attributes exposing (..)
-import Html.Events exposing (onClick)
+      				 <aside class="notes" data-markdown>
+      				 </aside>
+    				</section>
 
--- MODEL
+            <!-- Circuit -->
+            <section>
+              <img src="https://user-images.githubusercontent.com/125707/26849558-602a9e2c-4b0d-11e7-8a61-f27a27ab5b05.jpg" alt="">
+            </section>
 
-type alias Model =
-    Int
+            <!-- Gizra.com Team page -->
+            <section>
+              <small>https://www.gizra.com/team/</small>
+              <div>
+                <img src="https://user-images.githubusercontent.com/125707/26849354-7d266d0e-4b0c-11e7-90be-3aa040565508.jpg" alt="">
+              </div>
+            </section>
 
-emptyModel : Model
-emptyModel =
-    0
-
--- UPDATE
-
-type Msg
-    = Decrement
-    | Increment
-
-
-update : Msg -> Model -> ( Model, Cmd Msg )
-update msg model =
-    case msg of
-        Decrement ->
-            ( model - 1
-            , Cmd.none
-            )
-
-        Increment ->
-            ( model + 1
-            , Cmd.none
-            )
-
--- VIEW
-
-view : Model -> Html Msg
-view model =
-    div []
-        [ button [ onClick Decrement ] [ text "-" ]
-        , div [] [ text (toString model) ]
-        , button [ onClick Increment ] [ text "+" ]
-        ]
-
-        </code></pre>
-        <aside class="notes" data-markdown>
-          * Mandatory counter example, but soon we'll go over fancier examples.
-       </aside>
-      </section>
+            <!-- Municipality -->
+            <section>
+              <img src="https://user-images.githubusercontent.com/125707/26849558-602a9e2c-4b0d-11e7-8a61-f27a27ab5b05.jpg" alt="">
+            </section>
 
 
-      <section>
-        <h3>Compile Error Vs Runtime Mistakes</h3>
-
-        <aside class="notes" data-markdown>
-          * No Runtime exceptions in Elm
-          * Shift as much runtime mistakes to compile time error
-        </aside>
-      </section>
+            <!-- Municipality translate -->
+            <section>
+              <img src="https://user-images.githubusercontent.com/125707/26849779-12a6866a-4b0e-11e7-8e60-01bd8713b2e5.jpg" alt="">
+            </section>
 
 
+
+
+    			  <section data-background-video="http://zippy.gfycat.com/FickleTangibleAntlion.webm" data-background-video-loop>
+    					<aside class="notes" data-markdown>
+    						* Router
+    						* Maps
+    						* User interactions to filter events
+    					</aside>
+    			  </section>
+
+    				<section data-background-video="http://zippy.gfycat.com/RegularWelltodoEider.webm" data-background-video-loop>
+
+    					<aside class="notes" data-markdown>
+                * Uploading files with drag and drop
+                * This can be your own Drupal site
+                * Can by hybrid
+     				  </aside>
+    				</section>
       <!-- Yesod -->
       <section>
           <img src="https://cloud.githubusercontent.com/assets/125707/20651098/0daf5924-b4e7-11e6-846d-5f8f7a7abe37.jpg" alt="" />
